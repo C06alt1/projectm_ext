@@ -1,0 +1,484 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B76E4DA8-AAFD-3055-9AF0-1ACF9A036E28}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>Renderer</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Renderer.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Renderer.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Renderer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Renderer.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Renderer.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Renderer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Renderer.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Renderer.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Renderer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Renderer.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Renderer.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Renderer</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\Renderer\..;D:\Coding\projectm\cmake-build\src\libprojectM\Renderer;D:\Coding\projectm\src\libprojectM\Renderer;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;PROJECTM_CXX_STATIC_DEFINE;ENABLE_DEBUG_LOGGING;DEBUG;DATADIR_PATH="";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;PROJECTM_CXX_STATIC_DEFINE;ENABLE_DEBUG_LOGGING;DEBUG;DATADIR_PATH=\"\";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\Renderer\..;D:\Coding\projectm\cmake-build\src\libprojectM\Renderer;D:\Coding\projectm\src\libprojectM\Renderer;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\Renderer\..;D:\Coding\projectm\cmake-build\src\libprojectM\Renderer;D:\Coding\projectm\src\libprojectM\Renderer;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\Renderer\..;D:\Coding\projectm\cmake-build\src\libprojectM\Renderer;D:\Coding\projectm\src\libprojectM\Renderer;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH="";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH=\"\";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\Renderer\..;D:\Coding\projectm\cmake-build\src\libprojectM\Renderer;D:\Coding\projectm\src\libprojectM\Renderer;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\Renderer\..;D:\Coding\projectm\cmake-build\src\libprojectM\Renderer;D:\Coding\projectm\src\libprojectM\Renderer;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\Renderer\..;D:\Coding\projectm\cmake-build\src\libprojectM\Renderer;D:\Coding\projectm\src\libprojectM\Renderer;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH="";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH=\"\";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\Renderer\..;D:\Coding\projectm\cmake-build\src\libprojectM\Renderer;D:\Coding\projectm\src\libprojectM\Renderer;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\Renderer\..;D:\Coding\projectm\cmake-build\src\libprojectM\Renderer;D:\Coding\projectm\src\libprojectM\Renderer;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\Renderer\..;D:\Coding\projectm\cmake-build\src\libprojectM\Renderer;D:\Coding\projectm\src\libprojectM\Renderer;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH="";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH=\"\";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\Renderer\..;D:\Coding\projectm\cmake-build\src\libprojectM\Renderer;D:\Coding\projectm\src\libprojectM\Renderer;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\Renderer\..;D:\Coding\projectm\cmake-build\src\libprojectM\Renderer;D:\Coding\projectm\src\libprojectM\Renderer;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\stb_image;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Coding\projectm\cmake-build\CMakeFiles\e3ffb827e80e9035840d59239690fb1d\BuiltInTransitionsResources.hpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating BuiltInTransitionsResources.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Coding\projectm\src\libprojectM\Renderer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D SHADER_FILES=TransitionShaders/TransitionShaderBuiltInCircleGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInPlasmaGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSimpleBlendGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSweepGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInWarpGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInZoomBlurGlsl330.frag\;TransitionShaders/TransitionVertexShaderGlsl330.vert\;TransitionShaders/TransitionShaderHeaderGlsl330.frag\;TransitionShaders/TransitionShaderMainGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInBeatPulseGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInDatamoshGlsl330.frag -D OUTPUT_FILE=D:/Coding/projectm/cmake-build/src/libprojectM/Renderer/BuiltInTransitionsResources.hpp -P D:/Coding/projectm/cmake/GenerateShaderResourcesScript.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Coding\projectm\cmake\ShaderResources.hpp.in;D:\Coding\projectm\cmake\GenerateShaderResources.cmake;D:\Coding\projectm\cmake\GenerateShaderResourcesScript.cmake;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInCircleGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInPlasmaGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInSimpleBlendGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInSweepGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInWarpGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInZoomBlurGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderHeaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderMainGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInBeatPulseGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInDatamoshGlsl330.frag;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Coding\projectm\cmake-build\src\libprojectM\Renderer\BuiltInTransitionsResources.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating BuiltInTransitionsResources.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Coding\projectm\src\libprojectM\Renderer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D SHADER_FILES=TransitionShaders/TransitionShaderBuiltInCircleGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInPlasmaGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSimpleBlendGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSweepGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInWarpGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInZoomBlurGlsl330.frag\;TransitionShaders/TransitionVertexShaderGlsl330.vert\;TransitionShaders/TransitionShaderHeaderGlsl330.frag\;TransitionShaders/TransitionShaderMainGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInBeatPulseGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInDatamoshGlsl330.frag -D OUTPUT_FILE=D:/Coding/projectm/cmake-build/src/libprojectM/Renderer/BuiltInTransitionsResources.hpp -P D:/Coding/projectm/cmake/GenerateShaderResourcesScript.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Coding\projectm\cmake\ShaderResources.hpp.in;D:\Coding\projectm\cmake\GenerateShaderResources.cmake;D:\Coding\projectm\cmake\GenerateShaderResourcesScript.cmake;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInCircleGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInPlasmaGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInSimpleBlendGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInSweepGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInWarpGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInZoomBlurGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderHeaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderMainGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInBeatPulseGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInDatamoshGlsl330.frag;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Coding\projectm\cmake-build\src\libprojectM\Renderer\BuiltInTransitionsResources.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating BuiltInTransitionsResources.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Coding\projectm\src\libprojectM\Renderer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D SHADER_FILES=TransitionShaders/TransitionShaderBuiltInCircleGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInPlasmaGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSimpleBlendGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSweepGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInWarpGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInZoomBlurGlsl330.frag\;TransitionShaders/TransitionVertexShaderGlsl330.vert\;TransitionShaders/TransitionShaderHeaderGlsl330.frag\;TransitionShaders/TransitionShaderMainGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInBeatPulseGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInDatamoshGlsl330.frag -D OUTPUT_FILE=D:/Coding/projectm/cmake-build/src/libprojectM/Renderer/BuiltInTransitionsResources.hpp -P D:/Coding/projectm/cmake/GenerateShaderResourcesScript.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Coding\projectm\cmake\ShaderResources.hpp.in;D:\Coding\projectm\cmake\GenerateShaderResources.cmake;D:\Coding\projectm\cmake\GenerateShaderResourcesScript.cmake;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInCircleGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInPlasmaGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInSimpleBlendGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInSweepGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInWarpGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInZoomBlurGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderHeaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderMainGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInBeatPulseGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInDatamoshGlsl330.frag;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Coding\projectm\cmake-build\src\libprojectM\Renderer\BuiltInTransitionsResources.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating BuiltInTransitionsResources.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Coding\projectm\src\libprojectM\Renderer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D SHADER_FILES=TransitionShaders/TransitionShaderBuiltInCircleGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInPlasmaGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSimpleBlendGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSweepGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInWarpGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInZoomBlurGlsl330.frag\;TransitionShaders/TransitionVertexShaderGlsl330.vert\;TransitionShaders/TransitionShaderHeaderGlsl330.frag\;TransitionShaders/TransitionShaderMainGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInBeatPulseGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInDatamoshGlsl330.frag -D OUTPUT_FILE=D:/Coding/projectm/cmake-build/src/libprojectM/Renderer/BuiltInTransitionsResources.hpp -P D:/Coding/projectm/cmake/GenerateShaderResourcesScript.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Coding\projectm\cmake\ShaderResources.hpp.in;D:\Coding\projectm\cmake\GenerateShaderResources.cmake;D:\Coding\projectm\cmake\GenerateShaderResourcesScript.cmake;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInCircleGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInPlasmaGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInSimpleBlendGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInSweepGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInWarpGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInZoomBlurGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderHeaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderMainGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInBeatPulseGlsl330.frag;D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaders\TransitionShaderBuiltInDatamoshGlsl330.frag;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Coding\projectm\cmake-build\src\libprojectM\Renderer\BuiltInTransitionsResources.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Coding\projectm\src\libprojectM\Renderer\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Coding/projectm/src/libprojectM/Renderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Coding/projectm -BD:/Coding/projectm/cmake-build --check-stamp-file D:/Coding/projectm/cmake-build/src/libprojectM/Renderer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Coding\projectm\cmake\GenerateShaderResources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Coding\projectm\cmake-build\src\libprojectM\Renderer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Coding/projectm/src/libprojectM/Renderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Coding/projectm -BD:/Coding/projectm/cmake-build --check-stamp-file D:/Coding/projectm/cmake-build/src/libprojectM/Renderer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Coding\projectm\cmake\GenerateShaderResources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Coding\projectm\cmake-build\src\libprojectM\Renderer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Coding/projectm/src/libprojectM/Renderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Coding/projectm -BD:/Coding/projectm/cmake-build --check-stamp-file D:/Coding/projectm/cmake-build/src/libprojectM/Renderer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Coding\projectm\cmake\GenerateShaderResources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Coding\projectm\cmake-build\src\libprojectM\Renderer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Coding/projectm/src/libprojectM/Renderer/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Coding/projectm -BD:/Coding/projectm/cmake-build --check-stamp-file D:/Coding/projectm/cmake-build/src/libprojectM/Renderer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Coding\projectm\cmake\GenerateShaderResources.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Coding\projectm\cmake-build\src\libprojectM\Renderer\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Coding\projectm\cmake-build\src\libprojectM\Renderer\BuiltInTransitionsResources.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\BlendMode.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\BlendMode.hpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\Color.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\CopyTexture.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\CopyTexture.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\FileScanner.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\FileScanner.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\Framebuffer.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\Framebuffer.hpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\IdleTextures.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\Mesh.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\Mesh.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\MilkdropNoise.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\MilkdropNoise.hpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\OpenGL.h" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\Platform\DynamicLibrary.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\Platform\DynamicLibrary.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\Platform\GladLoader.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\Platform\GladLoader.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\Platform\GLProbe.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\Platform\GLProbe.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\Platform\GLResolver.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\Platform\GLResolver.hpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\Point.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\PresetTransition.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\PresetTransition.hpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\RenderContext.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\Sampler.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\Sampler.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\Shader.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\Shader.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\ShaderCache.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\ShaderCache.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\Texture.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\Texture.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\TextureAttachment.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\TextureAttachment.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\TextureManager.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\TextureManager.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\TextureSamplerDescriptor.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\TextureSamplerDescriptor.hpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\TextureUV.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaderManager.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\TransitionShaderManager.hpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\VertexArray.hpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\VertexBuffer.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\VertexBufferUsage.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\VertexBufferUsage.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\VertexIndexArray.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\VertexIndexArray.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\Platform\DynamicLibrary_win32.cpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\Platform\DynamicLibrary_posix.cpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\Renderer\Platform\DynamicLibrary_emscripten.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\Renderer\Platform\PlatformLibraryNames.hpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\Coding\projectm\cmake-build\ZERO_CHECK.vcxproj">
+      <Project>{D6DACBA9-8C71-3D59-A4BA-9C56EA0228E2}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Coding\projectm\cmake-build\vendor\glad\glad.vcxproj">
+      <Project>{615206A0-3175-3C0F-96A9-AB55ECA68B6D}</Project>
+      <Name>glad</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\Coding\projectm\cmake-build\vendor\glm\glm.vcxproj">
+      <Project>{00825DEF-7AD1-354A-A5C6-6548A16FE616}</Project>
+      <Name>glm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Coding\projectm\cmake-build\vendor\hlslparser\hlslparser.vcxproj">
+      <Project>{71A4E9F8-210F-3CAA-B886-9822A7F188BD}</Project>
+      <Name>hlslparser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Coding\projectm\cmake-build\src\api\projectM_api.vcxproj">
+      <Project>{4F7BAFD1-BD40-33B7-A13B-A8C6057300C6}</Project>
+      <Name>projectM_api</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Coding\projectm\cmake-build\vendor\stb_image\stb_image.vcxproj">
+      <Project>{E8B7CFCC-C26B-338C-B4C4-1AAC7D1A3E88}</Project>
+      <Name>stb_image</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,22 @@
+{
+	"InstallScripts" : 
+	[
+		"D:/Coding/projectm/cmake-build/cmake_install.cmake",
+		"D:/Coding/projectm/cmake-build/vendor/cmake_install.cmake",
+		"D:/Coding/projectm/cmake-build/vendor/glad/cmake_install.cmake",
+		"D:/Coding/projectm/cmake-build/vendor/glm/cmake_install.cmake",
+		"D:/Coding/projectm/cmake-build/vendor/hlslparser/cmake_install.cmake",
+		"D:/Coding/projectm/cmake-build/vendor/stb_image/cmake_install.cmake",
+		"D:/Coding/projectm/cmake-build/presets/cmake_install.cmake",
+		"D:/Coding/projectm/cmake-build/src/cmake_install.cmake",
+		"D:/Coding/projectm/cmake-build/src/api/cmake_install.cmake",
+		"D:/Coding/projectm/cmake-build/src/libprojectM/cmake_install.cmake",
+		"D:/Coding/projectm/cmake-build/src/libprojectM/Audio/cmake_install.cmake",
+		"D:/Coding/projectm/cmake-build/src/libprojectM/MilkdropPreset/cmake_install.cmake",
+		"D:/Coding/projectm/cmake-build/src/libprojectM/Renderer/cmake_install.cmake",
+		"D:/Coding/projectm/cmake-build/src/libprojectM/UserSprites/cmake_install.cmake",
+		"D:/Coding/projectm/cmake-build/src/playlist/cmake_install.cmake",
+		"D:/Coding/projectm/cmake-build/src/sdl-test-ui/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

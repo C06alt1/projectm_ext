@@ -101,6 +101,76 @@ PROJECTM_EXPORT void projectm_set_beat_sensitivity(projectm_handle instance, flo
 PROJECTM_EXPORT float projectm_get_beat_sensitivity(projectm_handle instance);
 
 /**
+ * @brief Audio frequency band identifiers, used for per-band EQ configuration.
+ * @since 4.2.0
+ */
+typedef enum {
+    PROJECTM_AUDIO_BAND_BASS = 0,
+    PROJECTM_AUDIO_BAND_MIDDLES = 1,
+    PROJECTM_AUDIO_BAND_TREBLE = 2
+} projectm_audio_band;
+
+/**
+ * @brief Sets an individual band's sensitivity multiplier.
+ * Scales how far the band's reactive value swings from its 1.0 baseline.
+ * 0.0 flatlines the band (looks silent regardless of playback volume).
+ * @param instance The projectM instance handle.
+ * @param band Which band to configure.
+ * @param sensitivity The sensitivity multiplier. Default: 1.0
+ * @since 4.2.0
+ */
+PROJECTM_EXPORT void projectm_set_band_sensitivity(projectm_handle instance, projectm_audio_band band, float sensitivity);
+
+/**
+ * @brief Returns a band's current sensitivity multiplier.
+ * @since 4.2.0
+ */
+PROJECTM_EXPORT float projectm_get_band_sensitivity(projectm_handle instance, projectm_audio_band band);
+
+/**
+ * @brief Sets an individual band's frequency range, in Hz.
+ * @param instance The projectM instance handle.
+ * @param band Which band to configure.
+ * @param low_hz Lower boundary, in Hz.
+ * @param high_hz Upper boundary, in Hz.
+ * @since 4.2.0
+ */
+PROJECTM_EXPORT void projectm_set_band_range(projectm_handle instance, projectm_audio_band band, float low_hz, float high_hz);
+
+/**
+ * @brief Returns a band's current lower boundary, in Hz.
+ * @since 4.2.0
+ */
+PROJECTM_EXPORT float projectm_get_band_low_hz(projectm_handle instance, projectm_audio_band band);
+
+/**
+ * @brief Returns a band's current upper boundary, in Hz.
+ * @since 4.2.0
+ */
+PROJECTM_EXPORT float projectm_get_band_high_hz(projectm_handle instance, projectm_audio_band band);
+
+/**
+ * @brief Returns a band's current-frame reactive value (unattenuated), relative to
+ * its recent average. ~1.0 = neutral/quiet, >1.3 = loud hit, <0.7 = very quiet.
+ * Useful for live debugging/tuning of band ranges and sensitivity.
+ * @since 4.2.0
+ */
+PROJECTM_EXPORT float projectm_get_band_current_value(projectm_handle instance, projectm_audio_band band);
+
+/**
+ * @brief Returns a band's time-smoothed (attenuated) reactive value.
+ * @since 4.2.0
+ */
+PROJECTM_EXPORT float projectm_get_band_average_value(projectm_handle instance, projectm_audio_band band);
+
+/**
+ * @brief Returns a band's last detected peak value, decaying back toward
+ * baseline between hits. Useful for a "how hard was the last hit" readout.
+ * @since 4.2.0
+ */
+PROJECTM_EXPORT float projectm_get_band_last_peak_value(projectm_handle instance, projectm_audio_band band);
+
+/**
  * @brief Sets the minimum display time before a hard cut can happen.
  *
  * <p>Hard cuts are beat-sensitive preset transitions, immediately changing from
@@ -393,6 +463,42 @@ PROJECTM_EXPORT void projectm_set_preset_start_clean(projectm_handle instance, b
  * @since 4.2.0
  */
 PROJECTM_EXPORT bool projectm_get_preset_start_clean(projectm_handle instance);
+
+/**
+ * @brief Identifiers for the built-in preset transition effects.
+ * @since 4.2.0
+ */
+typedef enum {
+    PROJECTM_TRANSITION_CIRCLE = 0,
+    PROJECTM_TRANSITION_PLASMA = 1,
+    PROJECTM_TRANSITION_FADE = 2,
+    PROJECTM_TRANSITION_SWEEP = 3,
+    PROJECTM_TRANSITION_WARP = 4,
+    PROJECTM_TRANSITION_ZOOM_BLUR = 5,
+    PROJECTM_TRANSITION_BEAT_PULSE = 6,
+    PROJECTM_TRANSITION_DATAMOSH = 7,
+    PROJECTM_TRANSITION_COUNT = 8
+} projectm_transition_type;
+
+/**
+ * @brief Enables or disables a transition type from the random selection pool.
+ * If all transitions are disabled, the engine falls back to selecting from the
+ * full set rather than stopping transitions entirely.
+ * @since 4.2.0
+ */
+PROJECTM_EXPORT void projectm_set_transition_enabled(projectm_handle instance, projectm_transition_type type, bool enabled);
+
+/**
+ * @brief Returns whether a transition type is currently enabled.
+ * @since 4.2.0
+ */
+PROJECTM_EXPORT bool projectm_get_transition_enabled(projectm_handle instance, projectm_transition_type type);
+
+/**
+ * @brief Returns a human-readable name for a transition type, for UI display.
+ * @since 4.2.0
+ */
+PROJECTM_EXPORT const char* projectm_get_transition_name(projectm_transition_type type);
 
 #ifdef __cplusplus
 } // extern "C"

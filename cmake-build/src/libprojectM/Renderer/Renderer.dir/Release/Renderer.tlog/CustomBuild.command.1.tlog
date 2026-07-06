@@ -1,0 +1,24 @@
+^D:\CODING\PROJECTM\CMAKE-BUILD\CMAKEFILES\E3FFB827E80E9035840D59239690FB1D\BUILTINTRANSITIONSRESOURCES.HPP.RULE
+setlocal
+cd D:\Coding\projectm\src\libprojectM\Renderer
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D SHADER_FILES=TransitionShaders/TransitionShaderBuiltInCircleGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInPlasmaGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSimpleBlendGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInSweepGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInWarpGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInZoomBlurGlsl330.frag\;TransitionShaders/TransitionVertexShaderGlsl330.vert\;TransitionShaders/TransitionShaderHeaderGlsl330.frag\;TransitionShaders/TransitionShaderMainGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInBeatPulseGlsl330.frag\;TransitionShaders/TransitionShaderBuiltInDatamoshGlsl330.frag -D OUTPUT_FILE=D:/Coding/projectm/cmake-build/src/libprojectM/Renderer/BuiltInTransitionsResources.hpp -P D:/Coding/projectm/cmake/GenerateShaderResourcesScript.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^D:\CODING\PROJECTM\SRC\LIBPROJECTM\RENDERER\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Coding/projectm -BD:/Coding/projectm/cmake-build --check-stamp-file D:/Coding/projectm/cmake-build/src/libprojectM/Renderer/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

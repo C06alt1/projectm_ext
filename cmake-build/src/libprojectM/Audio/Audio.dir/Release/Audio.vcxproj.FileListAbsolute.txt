@@ -1,0 +1,1 @@
+D:\Coding\projectm\cmake-build\src\libprojectM\Audio\Audio.dir\Release\Audio.lib

@@ -222,6 +222,8 @@ public:
 
     auto PCM() -> Audio::PCM&;
 
+    auto TransitionShaders() -> Renderer::TransitionShaderManager&;
+
     auto WindowWidth() -> int;
 
     auto WindowHeight() -> int;

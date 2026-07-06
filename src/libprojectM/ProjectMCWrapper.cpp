@@ -7,7 +7,10 @@
 #include <Logging.hpp>
 
 #include <Audio/AudioConstants.hpp>
+#include <Audio/Loudness.hpp>
+#include <Audio/PCM.hpp>
 #include <Renderer/Platform/GLResolver.hpp>
+#include <Renderer/TransitionShaderManager.hpp>
 
 #include <projectM-4/parameters.h>
 #include <projectM-4/render_opengl.h>
@@ -265,6 +268,71 @@ float projectm_get_beat_sensitivity(projectm_handle instance)
 {
     auto projectMInstance = handle_to_instance(instance);
     return projectMInstance->GetBeatSensitivity();
+}
+
+namespace
+{
+auto ToLoudnessBand(projectm_audio_band band) -> libprojectM::Audio::Loudness::Band
+{
+    switch (band)
+    {
+        case PROJECTM_AUDIO_BAND_BASS:
+            return libprojectM::Audio::Loudness::Band::Bass;
+        case PROJECTM_AUDIO_BAND_MIDDLES:
+            return libprojectM::Audio::Loudness::Band::Middles;
+        case PROJECTM_AUDIO_BAND_TREBLE:
+            return libprojectM::Audio::Loudness::Band::Treble;
+    }
+    return libprojectM::Audio::Loudness::Band::Bass; // unreachable, silences compiler warning
+}
+} // namespace
+
+void projectm_set_band_sensitivity(projectm_handle instance, projectm_audio_band band, float sensitivity)
+{
+    auto projectMInstance = handle_to_instance(instance);
+    projectMInstance->PCM().SetBandSensitivity(ToLoudnessBand(band), sensitivity);
+}
+
+float projectm_get_band_sensitivity(projectm_handle instance, projectm_audio_band band)
+{
+    auto projectMInstance = handle_to_instance(instance);
+    return projectMInstance->PCM().GetBand(ToLoudnessBand(band)).GetSensitivity();
+}
+
+void projectm_set_band_range(projectm_handle instance, projectm_audio_band band, float low_hz, float high_hz)
+{
+    auto projectMInstance = handle_to_instance(instance);
+    projectMInstance->PCM().SetBandRange(ToLoudnessBand(band), low_hz, high_hz);
+}
+
+float projectm_get_band_low_hz(projectm_handle instance, projectm_audio_band band)
+{
+    auto projectMInstance = handle_to_instance(instance);
+    return projectMInstance->PCM().GetBand(ToLoudnessBand(band)).LowHz();
+}
+
+float projectm_get_band_high_hz(projectm_handle instance, projectm_audio_band band)
+{
+    auto projectMInstance = handle_to_instance(instance);
+    return projectMInstance->PCM().GetBand(ToLoudnessBand(band)).HighHz();
+}
+
+float projectm_get_band_current_value(projectm_handle instance, projectm_audio_band band)
+{
+    auto projectMInstance = handle_to_instance(instance);
+    return projectMInstance->PCM().GetBand(ToLoudnessBand(band)).CurrentRelative();
+}
+
+float projectm_get_band_average_value(projectm_handle instance, projectm_audio_band band)
+{
+    auto projectMInstance = handle_to_instance(instance);
+    return projectMInstance->PCM().GetBand(ToLoudnessBand(band)).AverageRelative();
+}
+
+float projectm_get_band_last_peak_value(projectm_handle instance, projectm_audio_band band)
+{
+    auto projectMInstance = handle_to_instance(instance);
+    return projectMInstance->PCM().GetBand(ToLoudnessBand(band)).LastPeak();
 }
 
 double projectm_get_hard_cut_duration(projectm_handle instance)
@@ -560,4 +628,29 @@ void projectm_set_log_level(projectm_log_level log_level, bool current_thread_on
     {
         libprojectM::Logging::SetGlobalLogLevel(static_cast<libprojectM::Logging::LogLevel>(log_level));
     }
+}
+
+namespace
+{
+auto ToTransitionType(projectm_transition_type type) -> libprojectM::Renderer::TransitionType
+{
+    return static_cast<libprojectM::Renderer::TransitionType>(static_cast<int>(type));
+}
+} // namespace
+
+void projectm_set_transition_enabled(projectm_handle instance, projectm_transition_type type, bool enabled)
+{
+    auto projectMInstance = handle_to_instance(instance);
+    projectMInstance->TransitionShaders().SetTransitionEnabled(ToTransitionType(type), enabled);
+}
+
+bool projectm_get_transition_enabled(projectm_handle instance, projectm_transition_type type)
+{
+    auto projectMInstance = handle_to_instance(instance);
+    return projectMInstance->TransitionShaders().IsTransitionEnabled(ToTransitionType(type));
+}
+
+const char* projectm_get_transition_name(projectm_transition_type type)
+{
+    return libprojectM::Renderer::TransitionShaderManager::TransitionName(ToTransitionType(type));
 }

@@ -72,6 +72,35 @@ public:
      */
     auto GetFrameAudioData() const -> FrameAudioData;
 
+    /**
+     * @brief Returns a reference to the given band's Loudness instance.
+     * @param band Which band to retrieve.
+     */
+    auto GetBand(Loudness::Band band) -> Loudness&;
+
+    /**
+     * @brief Reconfigures a band's summed frequency range at runtime.
+     * @param band Which band to configure.
+     * @param lowHz Lower boundary, in Hz.
+     * @param highHz Upper boundary, in Hz.
+     * @param sampleRate The sample rate of the incoming audio data, in Hz.
+     */
+    void SetBandRange(Loudness::Band band, float lowHz, float highHz, float sampleRate = 44100.0f);
+
+    /**
+     * @brief Sets a band's individual sensitivity multiplier.
+     * @param band Which band to configure.
+     * @param sensitivity The sensitivity multiplier.
+     */
+    void SetBandSensitivity(Loudness::Band band, float sensitivity);
+
+    /**
+     * @brief Sets the global sensitivity multiplier on all three bands at once.
+     * This scales each band's own sensitivity proportionally rather than
+     * overwriting it - a band set to 0 stays at 0.
+     */
+    void SetGlobalSensitivityMultiplier(float multiplier);
+
 private:
     template<
         int signalAmplitude,
@@ -111,9 +140,9 @@ private:
     WaveformAligner m_alignR; //!< Left-channel waveform alignment.
 
     // Frame beat detection values
-    Loudness m_bass{Loudness::Band::Bass};       //!< Beat detection/volume for the "bass" band.
-    Loudness m_middles{Loudness::Band::Middles}; //!< Beat detection/volume for the "middles" band.
-    Loudness m_treble{Loudness::Band::Treble};   //!< Beat detection/volume for the "treble" band.
+    Loudness m_bass{Loudness::Band::Bass, 100.0f, 280.0f};         //!< Beat detection/volume for the "bass" band.
+    Loudness m_middles{Loudness::Band::Middles, 280.0f, 4000.0f}; //!< Beat detection/volume for the "middles" band.
+    Loudness m_treble{Loudness::Band::Treble, 4000.0f, 16000.0f}; //!< Beat detection/volume for the "treble" band.
 };
 
 } // namespace Audio

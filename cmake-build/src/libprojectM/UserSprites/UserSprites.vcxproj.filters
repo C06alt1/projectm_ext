@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\UserSprites\Factory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\UserSprites\MilkdropSprite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\UserSprites\SpriteManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Coding\projectm\cmake-build\src\libprojectM\UserSprites\SpriteShaders.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\UserSprites\Factory.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\UserSprites\MilkdropSprite.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\UserSprites\Sprite.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\UserSprites\SpriteException.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\UserSprites\SpriteManager.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Coding\projectm\cmake-build\CMakeFiles\b665009fc51dd071a9d0d1bf2e218e40\SpriteShaders.hpp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Coding\projectm\src\libprojectM\UserSprites\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{05581CF9-C2E0-3E5D-8210-F9B13FD6C8EC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{DD4822C2-B73A-3909-8AC0-FA4F177E28E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0B8AAC6A-B498-3A7D-BF13-9A554C754EEF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -8,6 +8,8 @@ set(TRANSITION_SHADER_FILES
         TransitionShaders/TransitionVertexShaderGlsl330.vert
         TransitionShaders/TransitionShaderHeaderGlsl330.frag
         TransitionShaders/TransitionShaderMainGlsl330.frag
+	TransitionShaders/TransitionShaderBuiltInBeatPulseGlsl330.frag
+	TransitionShaders/TransitionShaderBuiltInDatamoshGlsl330.frag
         )
 
 include(GenerateShaderResources)

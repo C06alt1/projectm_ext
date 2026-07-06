@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F7EEFFBB-E717-38F9-B1A9-C25CAB38B973}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>MilkdropPreset</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MilkdropPreset.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MilkdropPreset.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MilkdropPreset</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MilkdropPreset.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MilkdropPreset.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MilkdropPreset</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MilkdropPreset.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MilkdropPreset.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MilkdropPreset</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MilkdropPreset.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MilkdropPreset.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MilkdropPreset</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\MilkdropPreset\..;D:\Coding\projectm\src\libprojectM\MilkdropPreset;D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\glm\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Coding/projectm/cmake-build/vcpkg_installed/x64-windows/include/projectm-eval"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;PROJECTM_CXX_STATIC_DEFINE;ENABLE_DEBUG_LOGGING;DEBUG;DATADIR_PATH="";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;PRJM_F_SIZE=8;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;PROJECTM_CXX_STATIC_DEFINE;ENABLE_DEBUG_LOGGING;DEBUG;DATADIR_PATH=\"\";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;PRJM_F_SIZE=8;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\MilkdropPreset\..;D:\Coding\projectm\src\libprojectM\MilkdropPreset;D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\cmake-build\vcpkg_installed\x64-windows\include\projectm-eval;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\MilkdropPreset\..;D:\Coding\projectm\src\libprojectM\MilkdropPreset;D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\cmake-build\vcpkg_installed\x64-windows\include\projectm-eval;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\MilkdropPreset\..;D:\Coding\projectm\src\libprojectM\MilkdropPreset;D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\glm\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Coding/projectm/cmake-build/vcpkg_installed/x64-windows/include/projectm-eval"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH="";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;PRJM_F_SIZE=8;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH=\"\";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;PRJM_F_SIZE=8;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\MilkdropPreset\..;D:\Coding\projectm\src\libprojectM\MilkdropPreset;D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\cmake-build\vcpkg_installed\x64-windows\include\projectm-eval;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\MilkdropPreset\..;D:\Coding\projectm\src\libprojectM\MilkdropPreset;D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\cmake-build\vcpkg_installed\x64-windows\include\projectm-eval;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\MilkdropPreset\..;D:\Coding\projectm\src\libprojectM\MilkdropPreset;D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\glm\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Coding/projectm/cmake-build/vcpkg_installed/x64-windows/include/projectm-eval"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH="";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;PRJM_F_SIZE=8;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH=\"\";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;PRJM_F_SIZE=8;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\MilkdropPreset\..;D:\Coding\projectm\src\libprojectM\MilkdropPreset;D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\cmake-build\vcpkg_installed\x64-windows\include\projectm-eval;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\MilkdropPreset\..;D:\Coding\projectm\src\libprojectM\MilkdropPreset;D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\cmake-build\vcpkg_installed\x64-windows\include\projectm-eval;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\MilkdropPreset\..;D:\Coding\projectm\src\libprojectM\MilkdropPreset;D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\glm\..;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "D:/Coding/projectm/cmake-build/vcpkg_installed/x64-windows/include/projectm-eval"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <BufferSecurityCheck></BufferSecurityCheck>
+      <CallingConvention></CallingConvention>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <FloatingPointModel></FloatingPointModel>
+      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <ForcedIncludeFiles>config.h</ForcedIncludeFiles>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH="";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;PRJM_F_SIZE=8;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PROJECTM_CXX_STATIC_DEFINE;DATADIR_PATH=\"\";NOMINMAX;WIN32_LEAN_AND_MEAN;STBI_NO_DDS;PRJM_F_SIZE=8;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\MilkdropPreset\..;D:\Coding\projectm\src\libprojectM\MilkdropPreset;D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\cmake-build\vcpkg_installed\x64-windows\include\projectm-eval;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Coding\projectm\cmake-build\include;D:\Coding\projectm\vendor\glad\include;D:\Coding\projectm\src\libprojectM\MilkdropPreset\..;D:\Coding\projectm\src\libprojectM\MilkdropPreset;D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset;D:\Coding\projectm\src\api\include;D:\Coding\projectm\cmake-build\src\api\include;D:\Coding\projectm\vendor\hlslparser\src;D:\Coding\projectm\src;D:\Coding\projectm\vendor\glm\..;D:\Coding\projectm\cmake-build\vcpkg_installed\x64-windows\include\projectm-eval;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Coding\projectm\cmake-build\CMakeFiles\2bdf5ee07e2536e43c806622d8c9d846\MilkdropStaticShaders.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generating MilkdropStaticShaders.cpp, MilkdropStaticShaders.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+cd D:\Coding\projectm\src\libprojectM\MilkdropPreset
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D SHADER_FILES="Shaders/Blur1FragmentShaderGlsl330.frag;Shaders/Blur2FragmentShaderGlsl330.frag;Shaders/BlurVertexShaderGlsl330.vert;Shaders/PresetCompVertexShaderGlsl330.vert;Shaders/PresetMotionVectorsVertexShaderGlsl330.vert;Shaders/PresetShaderHeaderGlsl330.inc;Shaders/PresetWarpFragmentShaderGlsl330.frag;Shaders/PresetWarpVertexShaderGlsl330.vert;Shaders/TexturedDrawFragmentShaderGlsl330.frag;Shaders/TexturedDrawVertexShaderGlsl330.vert;Shaders/UntexturedDrawFragmentShaderGlsl330.frag;Shaders/UntexturedDrawVertexShaderGlsl330.vert" -D OUTPUT_DIR=D:/Coding/projectm/cmake-build/src/libprojectM/MilkdropPreset -P D:/Coding/projectm/src/libprojectM/MilkdropPreset/GenerateStaticShaders.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur1FragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur2FragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\BlurVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetCompVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetMotionVectorsVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetShaderHeaderGlsl330.inc;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpFragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawFragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawFragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp.in;D:\Coding\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp.in;D:\Coding\projectm\src\libprojectM\MilkdropPreset\GenerateStaticShaders.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp;D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generating MilkdropStaticShaders.cpp, MilkdropStaticShaders.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+cd D:\Coding\projectm\src\libprojectM\MilkdropPreset
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D SHADER_FILES="Shaders/Blur1FragmentShaderGlsl330.frag;Shaders/Blur2FragmentShaderGlsl330.frag;Shaders/BlurVertexShaderGlsl330.vert;Shaders/PresetCompVertexShaderGlsl330.vert;Shaders/PresetMotionVectorsVertexShaderGlsl330.vert;Shaders/PresetShaderHeaderGlsl330.inc;Shaders/PresetWarpFragmentShaderGlsl330.frag;Shaders/PresetWarpVertexShaderGlsl330.vert;Shaders/TexturedDrawFragmentShaderGlsl330.frag;Shaders/TexturedDrawVertexShaderGlsl330.vert;Shaders/UntexturedDrawFragmentShaderGlsl330.frag;Shaders/UntexturedDrawVertexShaderGlsl330.vert" -D OUTPUT_DIR=D:/Coding/projectm/cmake-build/src/libprojectM/MilkdropPreset -P D:/Coding/projectm/src/libprojectM/MilkdropPreset/GenerateStaticShaders.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur1FragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur2FragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\BlurVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetCompVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetMotionVectorsVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetShaderHeaderGlsl330.inc;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpFragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawFragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawFragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp.in;D:\Coding\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp.in;D:\Coding\projectm\src\libprojectM\MilkdropPreset\GenerateStaticShaders.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp;D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Generating MilkdropStaticShaders.cpp, MilkdropStaticShaders.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+cd D:\Coding\projectm\src\libprojectM\MilkdropPreset
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D SHADER_FILES="Shaders/Blur1FragmentShaderGlsl330.frag;Shaders/Blur2FragmentShaderGlsl330.frag;Shaders/BlurVertexShaderGlsl330.vert;Shaders/PresetCompVertexShaderGlsl330.vert;Shaders/PresetMotionVectorsVertexShaderGlsl330.vert;Shaders/PresetShaderHeaderGlsl330.inc;Shaders/PresetWarpFragmentShaderGlsl330.frag;Shaders/PresetWarpVertexShaderGlsl330.vert;Shaders/TexturedDrawFragmentShaderGlsl330.frag;Shaders/TexturedDrawVertexShaderGlsl330.vert;Shaders/UntexturedDrawFragmentShaderGlsl330.frag;Shaders/UntexturedDrawVertexShaderGlsl330.vert" -D OUTPUT_DIR=D:/Coding/projectm/cmake-build/src/libprojectM/MilkdropPreset -P D:/Coding/projectm/src/libprojectM/MilkdropPreset/GenerateStaticShaders.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur1FragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur2FragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\BlurVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetCompVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetMotionVectorsVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetShaderHeaderGlsl330.inc;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpFragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawFragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawFragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp.in;D:\Coding\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp.in;D:\Coding\projectm\src\libprojectM\MilkdropPreset\GenerateStaticShaders.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp;D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Generating MilkdropStaticShaders.cpp, MilkdropStaticShaders.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+cd D:\Coding\projectm\src\libprojectM\MilkdropPreset
+if %errorlevel% neq 0 goto :cmEnd
+D:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -D SHADER_FILES="Shaders/Blur1FragmentShaderGlsl330.frag;Shaders/Blur2FragmentShaderGlsl330.frag;Shaders/BlurVertexShaderGlsl330.vert;Shaders/PresetCompVertexShaderGlsl330.vert;Shaders/PresetMotionVectorsVertexShaderGlsl330.vert;Shaders/PresetShaderHeaderGlsl330.inc;Shaders/PresetWarpFragmentShaderGlsl330.frag;Shaders/PresetWarpVertexShaderGlsl330.vert;Shaders/TexturedDrawFragmentShaderGlsl330.frag;Shaders/TexturedDrawVertexShaderGlsl330.vert;Shaders/UntexturedDrawFragmentShaderGlsl330.frag;Shaders/UntexturedDrawVertexShaderGlsl330.vert" -D OUTPUT_DIR=D:/Coding/projectm/cmake-build/src/libprojectM/MilkdropPreset -P D:/Coding/projectm/src/libprojectM/MilkdropPreset/GenerateStaticShaders.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur1FragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur2FragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\BlurVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetCompVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetMotionVectorsVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetShaderHeaderGlsl330.inc;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpFragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawFragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawFragmentShaderGlsl330.frag;D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawVertexShaderGlsl330.vert;D:\Coding\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp.in;D:\Coding\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp.in;D:\Coding\projectm\src\libprojectM\MilkdropPreset\GenerateStaticShaders.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp;D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Coding/projectm/src/libprojectM/MilkdropPreset/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Coding/projectm -BD:/Coding/projectm/cmake-build --check-stamp-file D:/Coding/projectm/cmake-build/src/libprojectM/MilkdropPreset/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Coding/projectm/src/libprojectM/MilkdropPreset/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Coding/projectm -BD:/Coding/projectm/cmake-build --check-stamp-file D:/Coding/projectm/cmake-build/src/libprojectM/MilkdropPreset/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Coding/projectm/src/libprojectM/MilkdropPreset/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Coding/projectm -BD:/Coding/projectm/cmake-build --check-stamp-file D:/Coding/projectm/cmake-build/src/libprojectM/MilkdropPreset/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Coding/projectm/src/libprojectM/MilkdropPreset/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Coding/projectm -BD:/Coding/projectm/cmake-build --check-stamp-file D:/Coding/projectm/cmake-build/src/libprojectM/MilkdropPreset/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur1FragmentShaderGlsl330.frag">
+    </None>
+    <None Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\Blur2FragmentShaderGlsl330.frag">
+    </None>
+    <None Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\BlurVertexShaderGlsl330.vert">
+    </None>
+    <None Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetCompVertexShaderGlsl330.vert">
+    </None>
+    <None Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetMotionVectorsVertexShaderGlsl330.vert">
+    </None>
+    <None Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetShaderHeaderGlsl330.inc">
+    </None>
+    <None Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpFragmentShaderGlsl330.frag">
+    </None>
+    <None Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\PresetWarpVertexShaderGlsl330.vert">
+    </None>
+    <None Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawFragmentShaderGlsl330.frag">
+    </None>
+    <None Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\TexturedDrawVertexShaderGlsl330.vert">
+    </None>
+    <None Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawFragmentShaderGlsl330.frag">
+    </None>
+    <None Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Shaders\UntexturedDrawVertexShaderGlsl330.vert">
+    </None>
+    <ClCompile Include="D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp" />
+    <ClInclude Include="D:\Coding\projectm\cmake-build\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\BlurTexture.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\BlurTexture.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Border.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Border.hpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Constants.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\CustomShape.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\CustomShape.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\CustomWaveform.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\CustomWaveform.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\DarkenCenter.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\DarkenCenter.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\EvalLibMutex.cpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Factory.cpp">
+      <ObjectFileName>$(IntDir)Factory.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Factory.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Filters.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Filters.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\FinalComposite.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\FinalComposite.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\IdlePreset.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\IdlePreset.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\MilkdropPreset.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\MilkdropPreset.hpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\MilkdropPresetExceptions.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\MilkdropShader.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\MilkdropShader.hpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.cpp.in" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\MilkdropStaticShaders.hpp.in" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\MotionVectors.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\MotionVectors.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\PerFrameContext.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\PerFrameContext.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\PerPixelContext.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\PerPixelContext.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\PerPixelMesh.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\PerPixelMesh.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\PresetFileParser.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\PresetFileParser.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\PresetState.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\PresetState.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\ShapePerFrameContext.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\ShapePerFrameContext.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\VideoEcho.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\VideoEcho.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveform.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveform.hpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\WaveformMode.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\WaveformPerFrameContext.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\WaveformPerFrameContext.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\WaveformPerPointContext.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\WaveformPerPointContext.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\CenteredSpiro.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\CenteredSpiro.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Circle.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Circle.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\DerivativeLine.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\DerivativeLine.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\DoubleLine.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\DoubleLine.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\ExplosiveHash.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\ExplosiveHash.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Factory.cpp">
+      <ObjectFileName>$(IntDir)Waveforms/Factory.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Factory.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Line.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Line.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\LineBase.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\LineBase.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077Wave11.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077Wave11.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077Wave9.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077Wave9.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveFlower.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveFlower.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveLasso.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveLasso.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveSkewed.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveSkewed.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveStar.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveStar.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveX.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\Milkdrop2077WaveX.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\SpectrumLine.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\SpectrumLine.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\WaveformMath.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\WaveformMath.hpp" />
+    <ClCompile Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\XYOscillationSpiral.cpp" />
+    <ClInclude Include="D:\Coding\projectm\src\libprojectM\MilkdropPreset\Waveforms\XYOscillationSpiral.hpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="D:\Coding\projectm\cmake-build\ZERO_CHECK.vcxproj">
+      <Project>{D6DACBA9-8C71-3D59-A4BA-9C56EA0228E2}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Coding\projectm\cmake-build\vendor\glm\glm.vcxproj">
+      <Project>{00825DEF-7AD1-354A-A5C6-6548A16FE616}</Project>
+      <Name>glm</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Coding\projectm\cmake-build\vendor\hlslparser\hlslparser.vcxproj">
+      <Project>{71A4E9F8-210F-3CAA-B886-9822A7F188BD}</Project>
+      <Name>hlslparser</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\Coding\projectm\cmake-build\src\api\projectM_api.vcxproj">
+      <Project>{4F7BAFD1-BD40-33B7-A13B-A8C6057300C6}</Project>
+      <Name>projectM_api</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

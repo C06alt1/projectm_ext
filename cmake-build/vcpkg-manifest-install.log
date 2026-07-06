@@ -1,0 +1,45 @@
+Fetching registry information from https://github.com/microsoft/vcpkg (HEAD)...
+Detecting compiler hash for triplet x64-windows...
+Compiler found: C:/Program Files/Microsoft Visual Studio/18/Community/VC/Tools/MSVC/14.51.36231/bin/Hostx64/x64/cl.exe
+The following packages will be built and installed:
+    glm:x64-windows@1.0.3 -- git+https://github.com/microsoft/vcpkg@fbe815929bda5a29c7d1890ddae28f31e8fe4f5d
+    projectm-eval:x64-windows@1.0.6#1 -- git+https://github.com/microsoft/vcpkg@3c05c4c1f9a1a55cd3fd2da425b6fae2a07f9347
+  * vcpkg-cmake:x64-windows@2024-04-23 -- git+https://github.com/microsoft/vcpkg@e74aa1e8f93278a8e71372f1fa08c3df420eb840
+  * vcpkg-cmake-config:x64-windows@2024-05-23 -- git+https://github.com/microsoft/vcpkg@97a63e4bc1a17422ffe4eff71da53b4b561a7841
+Additional packages (*) will be modified to complete this operation.
+Restored 4 package(s) from C:\Users\Fred\AppData\Local\vcpkg\archives in 401 ms. Use --debug to see more details.
+Installing 1/4 vcpkg-cmake-config:x64-windows@2024-05-23...
+vcpkg-cmake-config:x64-windows@2024-05-23 package ABI: 1b115e07875b8efed7e6dd8c2c527ba4a9ddc30276092be564a4f286d3be5490
+Elapsed time to handle vcpkg-cmake-config:x64-windows: 20.6 ms
+Installing 2/4 vcpkg-cmake:x64-windows@2024-04-23...
+vcpkg-cmake:x64-windows@2024-04-23 package ABI: 9869b04895f49ffee5b5391674a725e44d8167803edb7aff8051ba065b412576
+Elapsed time to handle vcpkg-cmake:x64-windows: 46.7 ms
+Installing 3/4 projectm-eval:x64-windows@1.0.6#1...
+projectm-eval:x64-windows@1.0.6#1 package ABI: a7f74b984cb8c1519a1234cb65bc21126426428d57b5d572fa98027014168524
+Elapsed time to handle projectm-eval:x64-windows: 82.1 ms
+Installing 4/4 glm:x64-windows@1.0.3...
+glm:x64-windows@1.0.3 package ABI: f53a4000842b05de11463744a7204dab28691a3e1085e22a3c8badf07cf566d5
+Elapsed time to handle glm:x64-windows: 207 ms
+Installed contents are licensed to you by owners. Microsoft is not responsible for, nor does it grant any licenses to, third-party packages.
+Packages installed in this vcpkg installation declare the following licenses:
+MIT
+projectm-eval provides CMake targets:
+
+  find_package(projectM-Eval REQUIRED)
+  target_link_libraries(main PRIVATE projectM::Eval)
+
+To use the ns-eel2 shim with the Milkdrop codebase:
+
+  find_package(projectM-Eval REQUIRED COMPONENTS Milkdrop)
+  target_link_libraries(main PRIVATE projectM::ns-eel2)
+
+The package glm provides CMake targets:
+
+    find_package(glm CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE glm::glm)
+
+    # Or use the header-only version
+    find_package(glm CONFIG REQUIRED)
+    target_link_libraries(main PRIVATE glm::glm-header-only)
+
+All requested installations completed successfully in: 358 ms

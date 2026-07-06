@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Solution>
+	<Configurations>
+		<BuildType Name="Debug"/>
+		<BuildType Name="Release"/>
+		<BuildType Name="MinSizeRel"/>
+		<BuildType Name="RelWithDebInfo"/>
+		<Platform Name="x64"/>
+	</Configurations>
+	<Project Path="src/libprojectM/Audio/Audio.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="31231091-86b4-3e6c-bffb-2f5df5099bcd">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="src/api/projectM_api.vcxproj"/>
+	</Project>
+	<Project Path="src/libprojectM/UserSprites/UserSprites.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="767c863d-8dbd-3631-b3a2-b43c4c9bf7e0">
+		<BuildDependency Project="src/libprojectM/MilkdropPreset/MilkdropPreset.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="vendor/glm/glm.vcxproj"/>
+		<BuildDependency Project="vendor/hlslparser/hlslparser.vcxproj"/>
+		<BuildDependency Project="src/api/projectM_api.vcxproj"/>
+	</Project>
+	<Project Path="vendor/glad/glad.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="615206a0-3175-3c0f-96a9-ab55eca68b6d">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="vendor/glad/glad_obj.vcxproj"/>
+	</Project>
+	<Project Path="vendor/glad/glad_obj.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="fa6adf9b-d942-3ba4-aec8-df8b68d6710f">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="vendor/glm/glm.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="00825def-7ad1-354a-a5c6-6548a16fe616">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+	</Project>
+	<Project Path="src/libprojectM/projectM_main.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="bb3f5d5e-b79c-3554-a622-df725df601cb">
+		<BuildDependency Project="src/libprojectM/Audio/Audio.vcxproj"/>
+		<BuildDependency Project="src/libprojectM/MilkdropPreset/MilkdropPreset.vcxproj"/>
+		<BuildDependency Project="src/libprojectM/Renderer/Renderer.vcxproj"/>
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="vendor/glad/glad.vcxproj"/>
+		<BuildDependency Project="vendor/glm/glm.vcxproj"/>
+		<BuildDependency Project="vendor/hlslparser/hlslparser.vcxproj"/>
+		<BuildDependency Project="src/api/projectM_api.vcxproj"/>
+		<BuildDependency Project="vendor/stb_image/stb_image.vcxproj"/>
+	</Project>
+	<Project Path="src/playlist/projectM_playlist_main.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="ffdba29d-5b70-3d7e-9258-31efc5f39849">
+		<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		<BuildDependency Project="src/api/projectM_api.vcxproj"/>
+	</Project>
+	<Folder Name="/CMakePredefinedTargets/">
+		<Project Path="ALL_BUILD.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="45bdda61-a649-3fab-9ac1-24ccbc5fba6b" DefaultStartup="true">
+			<BuildDependency Project="src/libprojectM/Audio/Audio.vcxproj"/>
+			<BuildDependency Project="src/libprojectM/MilkdropPreset/MilkdropPreset.vcxproj"/>
+			<BuildDependency Project="src/libprojectM/Renderer/Renderer.vcxproj"/>
+			<BuildDependency Project="src/libprojectM/UserSprites/UserSprites.vcxproj"/>
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<BuildDependency Project="vendor/glad/glad.vcxproj"/>
+			<BuildDependency Project="vendor/glad/glad_obj.vcxproj"/>
+			<BuildDependency Project="vendor/glm/glm.vcxproj"/>
+			<BuildDependency Project="vendor/hlslparser/hlslparser.vcxproj"/>
+			<BuildDependency Project="src/libprojectM/projectM.vcxproj"/>
+			<BuildDependency Project="src/api/projectM_api.vcxproj"/>
+			<BuildDependency Project="src/libprojectM/projectM_main.vcxproj"/>
+			<BuildDependency Project="src/playlist/projectM_playlist.vcxproj"/>
+			<BuildDependency Project="src/playlist/projectM_playlist_main.vcxproj"/>
+			<BuildDependency Project="vendor/stb_image/stb_image.vcxproj"/>
+		</Project>
+		<Project Path="INSTALL.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="4bd11b3b-a416-34a1-8383-699dd0c2721a">
+			<BuildDependency Project="ALL_BUILD.vcxproj"/>
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<Build Solution="Debug|*" Project="false"/>
+			<Build Solution="Release|*" Project="false"/>
+			<Build Solution="MinSizeRel|*" Project="false"/>
+			<Build Solution="RelWithDebInfo|*" Project="false"/>
+		</Project>
+		<Project Path="PACKAGE.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="03733ac5-f3fc-3a24-9373-0cf8e9e92157">
+			<BuildDependency Project="ALL_BUILD.vcxproj"/>
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<Build Solution="Debug|*" Project="false"/>
+			<Build Solution="Release|*" Project="false"/>
+			<Build Solution="MinSizeRel|*" Project="false"/>
+			<Build Solution="RelWithDebInfo|*" Project="false"/>
+		</Project>
+		<Project Path="ZERO_CHECK.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="d6dacba9-8c71-3d59-a4ba-9c56ea0228e2"/>
+	</Folder>
+	<Folder Name="/libprojectM/">
+		<Project Path="src/libprojectM/MilkdropPreset/MilkdropPreset.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="f7eeffbb-e717-38f9-b1a9-c25cab38b973">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<BuildDependency Project="vendor/glm/glm.vcxproj"/>
+			<BuildDependency Project="vendor/hlslparser/hlslparser.vcxproj"/>
+			<BuildDependency Project="src/api/projectM_api.vcxproj"/>
+		</Project>
+		<Project Path="src/libprojectM/Renderer/Renderer.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="b76e4da8-aafd-3055-9af0-1acf9a036e28">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<BuildDependency Project="vendor/glad/glad.vcxproj"/>
+			<BuildDependency Project="vendor/glm/glm.vcxproj"/>
+			<BuildDependency Project="vendor/hlslparser/hlslparser.vcxproj"/>
+			<BuildDependency Project="src/api/projectM_api.vcxproj"/>
+			<BuildDependency Project="vendor/stb_image/stb_image.vcxproj"/>
+		</Project>
+		<Project Path="vendor/hlslparser/hlslparser.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="71a4e9f8-210f-3caa-b886-9822a7f188bd">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<BuildDependency Project="src/api/projectM_api.vcxproj"/>
+		</Project>
+		<Project Path="src/libprojectM/projectM.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="67d259a5-9235-3cdb-9654-1ea5725660ef">
+			<BuildDependency Project="src/libprojectM/Audio/Audio.vcxproj"/>
+			<BuildDependency Project="src/libprojectM/MilkdropPreset/MilkdropPreset.vcxproj"/>
+			<BuildDependency Project="src/libprojectM/Renderer/Renderer.vcxproj"/>
+			<BuildDependency Project="src/libprojectM/UserSprites/UserSprites.vcxproj"/>
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<BuildDependency Project="vendor/glad/glad_obj.vcxproj"/>
+			<BuildDependency Project="vendor/hlslparser/hlslparser.vcxproj"/>
+			<BuildDependency Project="src/api/projectM_api.vcxproj"/>
+			<BuildDependency Project="src/libprojectM/projectM_main.vcxproj"/>
+			<BuildDependency Project="vendor/stb_image/stb_image.vcxproj"/>
+		</Project>
+		<Project Path="src/api/projectM_api.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="4f7bafd1-bd40-33b7-a13b-a8c6057300c6">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		</Project>
+		<Project Path="src/playlist/projectM_playlist.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="11d36687-7353-3dbf-bcdc-d78d38716329">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+			<BuildDependency Project="src/libprojectM/projectM.vcxproj"/>
+			<BuildDependency Project="src/api/projectM_api.vcxproj"/>
+			<BuildDependency Project="src/playlist/projectM_playlist_main.vcxproj"/>
+		</Project>
+	</Folder>
+	<Folder Name="/vendor/"/>
+	<Folder Name="/vendor/stb_image/">
+		<Project Path="vendor/stb_image/stb_image.vcxproj" Type="8bc9ceb8-8b4a-11d0-8d11-00a0c91bc942" Id="e8b7cfcc-c26b-338c-b4c4-1aac7d1a3e88">
+			<BuildDependency Project="ZERO_CHECK.vcxproj"/>
+		</Project>
+	</Folder>
+</Solution>

@@ -1,0 +1,10 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-4.3/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in
+C:/Program Files/CMake/share/cmake-4.3/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/CheckCCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake/share/cmake-4.3/Modules/WriteBasicConfigVersionFile.cmake
+D:/Coding/projectm/cmake/GenerateExportHeader.cmake
+D:/Coding/projectm/cmake/exportheader.cmake.in
+D:/Coding/projectm/src/playlist/CMakeLists.txt
+D:/Coding/projectm/src/playlist/projectM4PlaylistConfig.cmake.in

@@ -1,0 +1,1 @@
+D:\Coding\projectm\cmake-build\src\libprojectM\UserSprites\UserSprites.dir\Release\UserSprites.lib

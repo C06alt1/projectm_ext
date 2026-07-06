@@ -96,6 +96,37 @@ auto PCM::GetFrameAudioData() const -> FrameAudioData
     return data;
 }
 
+auto PCM::GetBand(Loudness::Band band) -> Loudness&
+{
+    switch (band)
+    {
+        case Loudness::Band::Bass:
+            return m_bass;
+        case Loudness::Band::Middles:
+            return m_middles;
+        case Loudness::Band::Treble:
+            return m_treble;
+    }
+    return m_bass; // unreachable, silences compiler warning
+}
+
+void PCM::SetBandRange(Loudness::Band band, float lowHz, float highHz, float sampleRate)
+{
+    GetBand(band).Configure(lowHz, highHz, sampleRate);
+}
+
+void PCM::SetBandSensitivity(Loudness::Band band, float sensitivity)
+{
+    GetBand(band).SetSensitivity(sensitivity);
+}
+
+void PCM::SetGlobalSensitivityMultiplier(float multiplier)
+{
+    m_bass.SetGlobalMultiplier(multiplier);
+    m_middles.SetGlobalMultiplier(multiplier);
+    m_treble.SetGlobalMultiplier(multiplier);
+}
+
 void PCM::UpdateSpectrum(const WaveformBuffer& waveformData, SpectrumBuffer& spectrumData)
 {
     std::vector<float> waveformSamples(AudioBufferSamples);

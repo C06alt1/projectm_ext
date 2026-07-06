@@ -419,6 +419,10 @@ double ProjectM::GetFrameTime()
 void ProjectM::SetBeatSensitivity(float sensitivity)
 {
     m_beatSensitivity = std::min(std::max(0.0f, sensitivity), 2.0f);
+
+    // Scales each band's own sensitivity proportionally, rather than overwriting
+    // it - a band deliberately set to 0 stays at 0 regardless of this value.
+    m_audioStorage.SetGlobalSensitivityMultiplier(m_beatSensitivity);
 }
 
 auto ProjectM::GetBeatSensitivity() const -> float
@@ -551,6 +555,11 @@ void ProjectM::SetTexelOffsets(float texelOffsetX, float texelOffsetY)
 auto ProjectM::PCM() -> libprojectM::Audio::PCM&
 {
     return m_audioStorage;
+}
+
+auto ProjectM::TransitionShaders() -> libprojectM::Renderer::TransitionShaderManager&
+{
+    return *m_transitionShaderManager;
 }
 
 void ProjectM::Touch(float, float, int, int)

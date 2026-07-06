@@ -1,0 +1,1 @@
+D:\Coding\projectm\cmake-build\vendor\glad\glad_obj.dir\Release\glad_obj.lib

@@ -1,0 +1,17 @@
+
+Make bass range slider go to 0
+
+reset button for global sens
+
+have eq ranges reset to no gaps
+
+revisit beat pulse 
+
+revist datamosh
+
+remove wipe in brackets
+
+offset check boxes to the right a little
+
+
+live update number is confusing , seems like 1 is no beat and anything over is a beat maybe should be 0 for no beat

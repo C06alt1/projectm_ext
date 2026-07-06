@@ -1,0 +1,1 @@
+D:\Coding\projectm\cmake-build\src\libprojectM\Renderer\Renderer.dir\Release\Renderer.lib
